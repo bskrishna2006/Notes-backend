@@ -7,7 +7,7 @@ const app = express();
 const PORT = process.env.PORT || 5000;
 app.use(cors());
 app.use(bodyParser.json());
-mongoose.connect('mongodb://localhost:27017/mern-notes')
+mongoose.connect('mongodb+srv://krishnabs2023csbs:abcd1234@cluster0.mtccg.mongodb.net/')
   .then(() => console.log('Connected to MongoDB'))
   .catch(err => console.error('Could not connect to MongoDB', err));
 const noteSchema = new mongoose.Schema({
